@@ -8,5 +8,6 @@ set hlsearch
 set autoread
 set incsearch
 set autoindent
+set cursorline
 
 let g:SupperTabRetainCompletionType=2
