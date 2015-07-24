@@ -1,5 +1,4 @@
 color desert
-set ts=4
 set background=dark
 syntax on
 set number
@@ -11,8 +10,10 @@ set autoindent
 set cursorline
 set backspace=eol,indent,start
 set expandtab
-" To support tab backforward
+set tabstop=4
 set softtabstop=4
+set shiftwidth=4
+
 
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
@@ -21,3 +22,7 @@ autocmd BufReadPost *
      \ endif
 
 let g:SupperTabRetainCompletionType=2
+
+autocmd BufWritePre * :%s/\s\+$//ge
+
+setlocal textwidth=80
