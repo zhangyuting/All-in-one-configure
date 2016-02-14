@@ -24,5 +24,3 @@ autocmd BufReadPost *
 let g:SupperTabRetainCompletionType=2
 
 autocmd BufWritePre * :%s/\s\+$//ge
-
-setlocal textwidth=80
